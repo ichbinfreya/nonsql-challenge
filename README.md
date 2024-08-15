@@ -51,4 +51,17 @@ Rmove any establishments within the Dover Local Authority from the database.
 Check the number of documents to ensure they were deleted.
 
 ## Database Analysis
-In 'NoSQL_analysis_starter.ipynb' notebooj, I explored the database and convert into DataFrames by answering the questions listed in the notebook.
+In 'NoSQL_analysis_starter.ipynb' notebook, I explored the database and convert into DataFrames by answering the following questions:
+
+1. Which establishments have a hygiene score equal to 20?
+2. Which establishments in London have a RatingValue greater than or equal to 4?
+
+The London Local Authority has a longer name than "London". Used $regex in the search.
+
+3. What are the top 5 establishments with a RatingValue of 5, sorted by lowest hygiene score, nearest to the new restaurant added, "Penang Flavours"?
+
+Compare the geocode to find the nearest locations. Search within 0.01 degree on either side of the latitude and longitude.
+
+4. How many establishments in each Local Authority area have a hygiene score of 0?
+
+Sort the results from highest to lowest, and print out the top ten local authority areas. Used aggregation method.
